@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewcontroller.DetalhesActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/lblNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estacionamento" />
+
+            <TextView
+                android:id="@+id/txtNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/lblEndereco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Endereço" />
+
+            <TextView
+                android:id="@+id/txtEndereco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="rua"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/lblNumero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número" />
+
+            <TextView
+                android:id="@+id/txtNumero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/lblCidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cidade" />
+
+            <TextView
+                android:id="@+id/txtCidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sao paulo"
+                android:textSize="20dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/lblPrecos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preços"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimary"
+                android:paddingBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblPreco1Hora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Até 1 hora" />
+
+                    <TextView
+                        android:id="@+id/txtPreco1Hora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R$ 0.00"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/lblPrecoHoraAdicional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hora adicional" />
+
+                    <TextView
+                        android:id="@+id/txtPrecoHoraAdicional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R$ 0.00"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblPreco6Horas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6 Horas" />
+
+                    <TextView
+                        android:id="@+id/txtPreco6Horas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R$ 0.00"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/lblPrecoDiaria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Diária" />
+
+                    <TextView
+                        android:id="@+id/txtPrecoDiaria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R$ 0.00"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimary"
+                android:paddingBottom="10dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="121dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgMensalista"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/imgSeguro" />
+
+                <TextView
+                    android:id="@+id/lblMensalista"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/imgMensalista"
+                    android:layout_alignStart="@+id/imgMensalista"
+                    android:layout_below="@+id/imgMensalista"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:id="@+id/imgSeguro"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                     />
+
+                <TextView
+                    android:id="@+id/lblSeguro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/imgSeguro"
+                    android:layout_alignStart="@+id/imgSeguro"
+                    android:layout_below="@+id/imgSeguro"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:id="@+id/imgManobrista"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imgSeguro"
+                    android:layout_marginStart="25dp" />
+
+                <TextView
+                    android:id="@+id/lblManobrista"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/imgManobrista"
+                    android:layout_alignStart="@+id/imgManobrista"
+                    android:layout_below="@+id/imgManobrista"
+
+                    android:textAlignment="center" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
